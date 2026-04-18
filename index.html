@@ -1,152 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Fuse A&E</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Fuse A&E — Federal Architecture & Engineering</title>
 
-  <!-- Google Font -->
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fraunces:wght@400;500;600&display=swap" rel="stylesheet">
 
-  <!-- Site Styles -->
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css" />
 </head>
-
 <body>
+
+<!-- TOP BAR -->
+<div class="topbar">
+  <div class="container topbar-inner">
+    <div class="codes">
+      <span><strong>CAGE</strong> XXXXX</span>
+      <span><strong>UEI</strong> XXXXXXXXXXXX</span>
+      <span><strong>NAICS</strong> 541310 · 541330</span>
+    </div>
+    <div class="topbar-meta">SAM.gov Registered · Small Business</div>
+  </div>
+</div>
 
 <!-- HEADER -->
 <header class="header">
   <div class="container header-inner">
-    <div class="brand">
-      <img src="fuse-logo.png" alt="Fuse A&E logo" class="logo">
-    </div>
-
+    <img src="fuse-logo.png" alt="Fuse A&E" class="logo">
     <nav class="nav">
       <a href="#about">About</a>
-      <a href="#practice">Practice Areas</a>
-      <a href="#contact">Contact</a>
+      <a href="#practice">Practice</a>
+      <a href="#capabilities">Capabilities</a>
+      <a href="#focus">Federal Focus</a>
+      <a href="#contact" class="btn">Request Qualifications</a>
     </nav>
-  </div>
-
-  <div class="header-tagline">
-    Mission‑Ready Architecture &amp; Engineering
   </div>
 </header>
 
-<main>
-
 <!-- HERO -->
 <section class="hero">
-  <div class="container">
-    <h1>Architecture + Engineering for Mission‑Critical Defense Facilities</h1>
+  <div class="container hero-content">
+    <span class="eyebrow">Federal Architecture & Engineering</span>
+    <h1>Mission‑critical facilities, engineered with discipline.</h1>
+    <p class="lede">
+      Integrated architectural and multi‑disciplinary engineering services
+      for the Department of Defense and U.S. federal agencies operating in
+      regulated, security‑sensitive, and operationally complex environments.
+    </p>
+
+    <div class="hero-actions">
+      <a href="#capabilities" class="btn-primary">Our Capabilities</a>
+      <a href="#contact" class="btn-ghost">Contact Principal</a>
+    </div>
+
+    <div class="hero-strip">
+      <div><strong>100% Federal</strong><span>Focused</span></div>
+      <div><strong>A + E</strong><span>Single Contract</span></div>
+      <div><strong>CONUS / OCONUS</strong><span>Delivery</span></div>
+      <div><strong>UFC / DoD</strong><span>Aligned</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- QUICK SNAPSHOT -->
+<section class="snapshot">
+  <div class="container snapshot-grid">
+    <div>Architecture</div>
+    <div>Engineering</div>
+    <div>Master Planning</div>
+    <div>Renovation & Repair</div>
+    <div>AT/FP</div>
+    <div>Construction Admin</div>
   </div>
 </section>
 
 <!-- ABOUT -->
-<section id="about" class="section about">
-  <div class="container">
-    <p class="lead">
-      Fuse A&E is a full‑service architectural and multi‑disciplinary engineering firm specializing in the planning, design, and delivery of facilities and infrastructure for U.S. federal government agencies.
-    </p>
+<section id="about" class="section">
+  <div class="container two-col">
+    <div>
+      <span class="eyebrow-dark">About the Firm</span>
+      <h2>Purpose‑built for <em>federal clients.</em></h2>
 
-    <p>
-      We support mission‑critical programs for the Department of Defense and other federal agencies through compliant, resilient, and mission‑ready design solutions.
-    </p>
-
-    <div class="about-grid">
-      <div>
-        <h3>Our Federal Focus</h3>
-        <p>
-          Fuse A&E is purpose‑built to serve federal clients operating in regulated, security‑sensitive, and operationally complex environments.
-        </p>
-        <p>
-          We support projects for Department of Defense components, homeland security agencies, aviation facilities, and federal civilian agencies.
-        </p>
-      </div>
-
-      <div>
-        <h3>How We Work</h3>
-        <p>
-          Our approach emphasizes disciplined execution, clear documentation, and principal‑level oversight.
-        </p>
-        <p>
-          Integrated architectural and engineering services allow delivery under a single contract structure.
-        </p>
-      </div>
-
-      <div>
-        <h3>Where We Operate</h3>
-        <p>
-          Fuse A&E supports federal programs both domestically and internationally, including CONUS and OCONUS locations.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- PRACTICE AREAS -->
-<section id="practice" class="section practice">
-  <div class="container">
-    <h2>Practice Areas</h2>
-
-    <div class="practice-grid">
-      <div class="practice-card">
-        <h3>Architecture</h3>
-        <p>
-          Secure, functional facilities aligned with Department of Defense standards and lifecycle performance.
-        </p>
-      </div>
-
-      <div class="practice-card">
-        <h3>Engineering</h3>
-        <p>
-          Integrated engineering solutions supporting complex systems and compliance-driven documentation.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- CONTACT -->
-<section id="contact" class="section contact">
-  <div class="container">
-    <h2>Contact Us</h2>
-
-    <form class="contact-form">
-      <div class="form-group">
-        <label>Name</label>
-        <input type="text" required>
-      </div>
-
-      <div class="form-group">
-        <label>Email</label>
-        <input type="email" required>
-      </div>
-
-      <div class="form-group">
-        <label>Message</label>
-        <textarea rows="5" required></textarea>
-      </div>
-
-      <button type="submit">Send Message</button>
-    </form>
-  </div>
-</section>
-
-</main>
-
-<footer class="footer">
-  <div class="container">
-    <p><strong>Fuse A & E, LLC</strong></p>
-    <p>1045 E. McKellips Road, Suite 11</p>
-    <p>Mesa, Arizona 85203</p>
-    <p>United States</p>
-    <a href="mailto:info@fuseae.com">info@fuseae.com</a>
-  </div>
-</footer>
-
-<script src="script.js"></script>
-</body>
-</html>
+      <p>
+        <strong>Fuse A&E</strong> is a full‑service architectural and
+        multi‑disciplinary engineering firm supporting U.S. federal government
