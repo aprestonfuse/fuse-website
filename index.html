@@ -1,103 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Fuse A&E — Architecture & Engineering for Mission-Critical Defense Facilities</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Fuse A&E — Architecture & Engineering for Mission-Critical Defense Facilities</title>
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Federal-focused font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-<style>
-/* =========================
-   VARIABLES & RESET
-========================= */
-:root {
-  --ink:#0f1822;
-  --ink-2:#1f2933;
-  --steel:#3b4a5c;
-  --steel-2:#6b7a8f;
-  --line:#e4e7ec;
-  --bg:#ffffff;
-  --bg-alt:#f4f6f8;
-  --accent:#1c4ed8;
-  --accent-dk:#133a9f;
-  --gold:#b8945b;
-}
-*{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
-body{
-  font-family:'Inter',sans-serif;
-  color:var(--ink);
-  background:var(--bg);
-  line-height:1.65;
-}
-.container{max-width:1240px;margin:0 auto;padding:0 32px}
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
 
-/* =========================
-   TOP BAR
-========================= */
-.topbar{
-  background:var(--ink);
-  color:#c8d0db;
-  font-size:12px;
-  text-transform:uppercase;
-  letter-spacing:.08em;
-}
-.topbar .container{
-  display:flex;
-  justify-content:space-between;
-  padding:10px 32px;
-}
-.topbar strong{color:var(--gold)}
+<!-- TOP BAR -->
+<div class="topbar">
+  <div class="container topbar-inner">
+    <div class="codes">
+      <span><strong>CAGE</strong> XXXXX</span>
+      <span><strong>UEI</strong> XXXXXXXXXXXX</span>
+      <span><strong>NAICS</strong> 541310 · 541330</span>
+    </div>
+    <div class="topbar-meta">SAM.gov Registered · Small Business</div>
+  </div>
+</div>
 
-/* =========================
-   HEADER
-========================= */
-.header{
-  position:sticky;
-  top:0;
-  background:rgba(255,255,255,.97);
-  backdrop-filter:blur(8px);
-  border-bottom:1px solid var(--line);
-  z-index:100;
-}
-.header-inner{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  padding:18px 0;
-}
-.brand img{height:58px}
-.nav{display:flex;gap:32px}
-.nav a{
-  color:var(--ink-2);
-  text-decoration:none;
-  font-weight:500;
-  font-size:14.5px;
-}
-.nav .btn{
-  background:var(--accent);
-  color:#fff;
-  padding:11px 22px;
-  border-radius:2px;
-  font-weight:600;
-}
+<!-- HEADER -->
+<header class="header">
+  <div class="container header-inner">
+    <div class="brand">
+      <img src="fuse-logo.png" alt="Fuse A&E">
+    </div>
+    <nav class="nav">
+      <a href="#about">About</a>
+      <a href="#practice">Practice</a>
+      <a href="#capabilities">Capabilities</a>
+      <a href="#focus">Federal Focus</a>
+      <a href="#contact" class="btn">Request Qualifications</a>
+    </nav>
+  </div>
+</header>
 
-/* =========================
-   HERO
-========================= */
-.hero{
-  min-height:88vh;
-  display:flex;
-  align-items:center;
-  background:
-    linear-gradient(115deg,rgba(15,24,34,.92),rgba(15,24,34,.35)),
-    url('https://images.unsplash.com/photo-1487958449943-2429e8be8625?auto=format&fit=crop&w=2000&q=80');
-  background-size:cover;
-  color:#fff;
-}
-.hero-content{max-width:880px}
-.hero .eyebrow{
-  color:var(--gold);
+<!-- HERO -->
+<section class="hero">
+  <div class="container hero-content">
+    <span class="eyebrow">Federal Architecture & Engineering</span>
+    <h1>Mission‑critical facilities,<br>engineered with discipline.</h1>
+
+    <p class="lede">
+      Fuse A&E delivers integrated architectural and multi‑disciplinary engineering services
+      for the Department of Defense and U.S. federal agencies operating in regulated,
+      security‑sensitive, and operationally complex environments — CONUS and OCONUS.
+    </p>
+
+    <div class="hero-actions">
+      <a href="#capabilities" class="btn-primary">Our Capabilities</a>
+      <a href="#contact" class="btn-ghost">Contact Principal</a>
+    </div>
+
+    <div class="hero-stats">
+      <div class="stat"><span class="num">100%</span><span class="label">Federal Focus</span></div>
+      <div class="stat"><span class="num">A + E</span><span class="label">Single Contract</span></div>
+      <div class="stat"><span class="num">CONUS / OCONUS</span><span class="label">Delivery</span></div>
+      <div class="stat"><span class="num">DoD</span><span class="label">Standards Aligned</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section">
+  <div class="container about-grid">
+    <div>
+      <span class="eyebrow-dark">About the Firm</span>
+      <h2>Purpose‑built for <em>federal clients.</em></h2>
+
+      <div class="about-text">
+        <p><strong>Fuse A&E is a full‑service architectural and multi‑disciplinary engineering firm</strong>
+        specializing in the planning, design, and delivery of facilities and infrastructure for
+        U.S. federal government agencies.</p>
+
+        <p>
+          We support mission‑critical programs for the Department of Defense and federal civilian
+          agencies through compliant, resilient, and mission‑ready design solutions delivered in
+          regulated, security‑sensitive, and operationally complex environments.
+        </p>
+
+        <p>
+          Our work spans headquarters facilities, operational buildings, aviation infrastructure,
+          secure environments, and specialized mission‑support spaces — domestically and internationally.
+        </p>
+
+        <p>
+          Our approach emphasizes <strong>disciplined execution, clear documentation,</strong> and
+          <strong>principal‑level oversight</strong> under a single accountable A+E contract structure.
+        </p>
+      </div>
+    </div>
+
+    <div class="pillars">
+      <div class="pillar">
+        <strong>Federal Focus</strong>
+        <span>DoD & Federal Civil Agencies</span>
+      </div>
+      <div class="pillar">
+        <strong>Disciplined Execution</strong>
+        <span>Compliance‑driven delivery</span>
+      </div>
+      <div class="pillar">
+        <strong>Integrated A+E</strong>
+        <span>Single accountable contract</span>
+      </div>
+      <div class="pillar">
+        <strong>Global Reach</strong>
+        <span>CONUS & OCONUS programs</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRACTICE -->
+<section id="practice" class="section alt">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow-dark">Practice Areas</span>
+      <h2>Two disciplines. <em>One integrated team.</em></h2>
+    </div>
+
+    <div class="practice-grid">
+      <div class="practice-card">
+        <h3>Architecture</h3>
+        <p>
+          Secure, functional facilities aligned with federal procurement requirements
+          and Department of Defense standards.
+        </p>
+        <ul>
+          <li>Facility planning & programming</li>
